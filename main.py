@@ -110,11 +110,11 @@ class MainWindow(QtWidgets.QMainWindow):
         self.label.setPixmap(QtGui.QPixmap(self.qt_image.image))
 
     def action_start(self):
-
-        self.path_algorithmus=path_finding.Choice_of_Algorithm(self.qt_image,start=(0,0),end=(31,31))
-      #  self.path_algorithmus._wall_in_frame()
-       # self.path_algorithmus.using_aglo1()
-        #print(self.path_algorithmus.solution)
+        """ Start the programm """
+        self.path_algorithmus=path_finding.Choice_of_Algorithm(self.qt_image)
+        # self.path_algorithmus._wall_in_frame()
+        # self.path_algorithmus.using_aglo1()
+        # print(self.path_algorithmus.solution)
         self.path_algorithmus.start_algorithm()
         self.label.setPixmap(QtGui.QPixmap(self.qt_image.image))
 if __name__ == "__main__":

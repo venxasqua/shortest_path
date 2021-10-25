@@ -1,4 +1,7 @@
 class Knot:
+    """ this class is created to find the path
+        so if we find a path to the final knot
+        then we can back tracking to find the path"""
     def __init__(self,point,previous=None) -> None:
         self.point : tuple = point
         self.previous : tuple = previous
