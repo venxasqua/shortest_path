@@ -9,10 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtGui import QImage
 import sys
-import numpy as np
-import cv2 as cv
 import path_finding
 
 
